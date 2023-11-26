@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>Calculator</h1>
+	</header>
+	
+	<div class="container">
+		<input id="result" type="text" class="display" />
+  
+		<div class="buttons">
+		  <button class="operator" id="ac" onclick="calculatorClear()">AC</button>
+		  <button class="operator" id="dl" onclick="removeLast()">DL</button>
+		  <button class="operator" id="div" onclick="displayData('/')">/</button>
+		  <button class="operator" id="equal" onclick="calculateResult()">=</button>
+		  
+  
+		  <button id="seven" onclick="displayData('7')">7</button>
+		  <button id="eight" onclick="displayData('8')">8</button>
+		  <button id="nine" onclick="displayData('9')">9</button>
+		  <button class="operator" id="mul" onclick="displayData('*')">*</button>
+  
+		  <button id="four" onclick="displayData('4')">4</button>
+		  <button id="five" onclick="displayData('5')">5</button>
+		  <button id="six" onclick="displayData('6')">6</button>
+		  <button class="operator" id="sub" onclick="displayData('-')">-</button>
+  
+		  <button id="one" onclick="displayData('1')">1</button>
+		  <button id="two" onclick="displayData('2')">2</button>
+		  <button id="three" onclick="displayData('3')">3</button>
+		  <button class="operator" id="add" onclick="displayData('+')">+</button>
+
+		  <button id="zero" onclick="displayData('0')">0</button>
+		  <button id="dzero" onclick="displayData('00')">00</button>
+          <button  id="point" onclick="displayData('.')">.</button>
+		  <button class="operator" id="mode" onclick="displayData('%')">%</button>
+		
+		</div>
+	  </div>
+</body>
+<script src="./main.js"></script>
+</html>
